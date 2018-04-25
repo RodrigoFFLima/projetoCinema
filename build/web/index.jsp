@@ -59,7 +59,7 @@
         <div class="full">
             <div class="menu">
                 <ul>
-                    <li><a class="active" href="index.html"><i class="home"></i></a></li>
+                    <li><a class="active" href="index.jsp"><i class="home"></i></a></li>
                     <li><a href="videos.html"><div class="video"><i class="videos"></i><i class="videos1"></i></div></a></li>
                     <li><a href="reviews.html"><div class="cat"><i class="watching"></i><i class="watching1"></i></div></a></li>
                     <li><a href="404.html"><div class="bk"><i class="booking"></i><i class="booking1"></i></div></a></li>
@@ -71,18 +71,18 @@
                      background-size: cover;">
                     <div class="top-header">
                         <div class="logo">
-                            <a href="index.html"><img src="images/logo.png" alt="" /></a>
+                            <a href="index.jsp"><img src="images/logo.png" alt="" /></a>
                             <p>Movie Theater</p>
                         </div>
                         <div class="clearfix"></div>
                     </div>
                     <div class="header-info">
                         <h1><%=fil.getFil_nome()%></h1>
-                        <p class="age"><a href="#"><%=fil.getFet_id()%> Anos</a></p>
-                        <p class="review reviewgo"><b>Gêneros</b>	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : &nbsp;&nbsp; <%=fil.getFil_genero()%></p>
-                        <p class="review"><b>Lançamento</b> &nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;&nbsp; <%=fil.getFil_lancamento()%></p>
-                        <p class="review"><b>Duração</b> &nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;&nbsp; <%=fil.getFil_duracao()%> minutos</p> 
-                        <p class="review"><b>Sessões</b> &nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;&nbsp; <%=fil.getSes_id()%></p>
+                        <p class="age"><a href="#"><%=fil.getFet_id()%> Anos</a><a href="descricaoCompleta.jsp?id=<%=fil.getFil_id()%>"><i class="book1"></i>Comprar Ingresso</a></p>
+                        <p class="review reviewgo"><b>Gêneros</b> : &nbsp;&nbsp; <%=fil.getFil_genero()%></p>
+                        <p class="review"><b>Estreia</b> : &nbsp;&nbsp; <%=fil.getFil_lancamento()%></p>
+                        <p class="review"><b>Duração</b> : &nbsp;&nbsp; <%=fil.getFil_duracao()%> minutos</p> 
+                        <p class="review"><b>Sessões</b> : &nbsp;&nbsp; <%=fil.getSes_id()%></p>
                         <p class="special"><%=fil.getFil_sinopse()%></p>
                     </div>
                 </div>

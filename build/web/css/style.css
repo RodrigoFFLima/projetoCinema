@@ -49,7 +49,6 @@ label{
 	background: rgba(255, 255, 255, 0.47);
 }
 .header {
-	background: url('../images/header-bg.jpg') no-repeat 0px 0px;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -59,7 +58,7 @@ label{
 }
 .header-info {
 	float:right;
-	width:25%;
+	width:27%;
         background: linear-gradient(#A9A9A9, #D3D3D3);
 }
 .header-info h1 {
